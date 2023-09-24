@@ -1,0 +1,115 @@
+/* Phần latest transaction */
+.transaction_list {
+  padding: 24px 20px;
+  border-radius: 8px;
+  box-shadow: rgba(120, 120, 120, 0.35) 5px 5px 15px 1px;
+}
+
+.transaction_list h1 {
+  text-transform: capitalize;
+}
+
+.table_wrap {
+  margin: 20px auto;
+  overflow-x: auto;
+  font-weight: 500;
+  border: 2px solid rgb(180, 180, 180);
+  border-radius: 4px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table_wrap table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table_wrap th {
+  position: relative;
+  color: rgb(100, 100, 100);
+  text-transform: capitalize;
+}
+
+.table_wrap th input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+.table_wrap th:not(:last-child)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-right: 2px solid rgb(200, 200, 200);
+  height: 20px;
+  top: 50%;
+  right: -4px;
+  transform: translateY(-50%);
+}
+
+.table_wrap tbody tr {
+  border-bottom: 2px solid rgb(180, 180, 180);
+}
+
+.table_wrap th,
+.table_wrap td {
+  padding: 14px 10px;
+  white-space: nowrap;
+}
+
+.table_wrap td {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.table_wrap .room {
+  max-width: 120px;
+  white-space: unset;
+}
+
+.table_wrap table tbody tr:nth-child(odd) {
+  color: #000;
+}
+
+.table_wrap span {
+  color: #000;
+  font-weight: bold;
+}
+
+.table_wrap table tfoot tr td {
+  padding: 24px 10px;
+  text-align: right;
+  font-size: 16px;
+}
+
+.table_wrap table tfoot tr td:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.table_wrap table tfoot tr td i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.table_wrap table tfoot tr td i:hover {
+  color: #a9a9a9;
+}
+
+/* Phần color trạng thái room */
+.table_wrap .booked_color {
+  background-color: #f69685;
+  padding: 6px 4px;
+  border-radius: 4px;
+}
+
+.table_wrap .checkin_color {
+  background-color: #39d139;
+  padding: 6px 4px;
+  border-radius: 4px;
+}
+.table_wrap .checkout_color {
+  background-color: #d3d0f2;
+  padding: 6px 4px;
+  border-radius: 4px;
+}

@@ -1,0 +1,81 @@
+.info_board_nav {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.info_board_nav_item {
+  position: relative;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: rgba(120, 120, 120, 0.35) 5px 5px 15px 1px;
+  transition: all 0.3s ease;
+}
+
+.info_board_nav_item:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  box-shadow: rgba(85, 85, 85, 0.7) 2px 2px 15px 2px;
+}
+
+.info_board_nav_item:hover .info_board_nav_item_icon {
+  right: 18px;
+  bottom: 18px;
+}
+
+.info_board_nav_item_title {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: rgb(120, 120, 120);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.info_board_nav_item_amount {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: rgb(80, 80, 80);
+}
+
+.info_board_nav_item_icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: rgb(255, 184, 184);
+  color: red;
+  right: 8px;
+  bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.info_board_nav_item_icon i {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* màu cho các item */
+.user_icon {
+  background-color: rgb(255, 184, 184);
+  color: red;
+}
+
+.order_icon {
+  background-color: rgb(255, 255, 120);
+  color: rgb(146, 146, 0);
+}
+
+.earnings_icon {
+  background-color: rgb(120, 255, 120);
+  color: rgb(20, 150, 20);
+}
+
+.balance_icon {
+  background-color: rgb(192, 175, 255);
+  color: rgb(121, 87, 248);
+}

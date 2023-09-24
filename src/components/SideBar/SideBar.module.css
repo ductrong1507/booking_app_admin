@@ -1,0 +1,55 @@
+#side_bar {
+  border-right: 2px solid rgb(150, 150, 150);
+}
+
+.side_bar_section {
+  color: rgb(120, 120, 120);
+  margin-bottom: 32px;
+}
+
+.side_bar_section_title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.side_bar_section ul {
+  list-style-type: none;
+  padding: 0 12px;
+}
+
+.side_bar_section ul li {
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+
+.side_bar_section ul li:hover {
+  transform: scale(1.1);
+  color: #000;
+}
+
+.side_bar_section ul li i {
+  color: #7957f8;
+  width: 20px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.side_bar_section ul li a {
+  text-decoration: none;
+  color: rgb(120, 120, 120);
+}
+
+.active {
+  color: #000 !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.active i {
+  transform: scale(1.2);
+}
